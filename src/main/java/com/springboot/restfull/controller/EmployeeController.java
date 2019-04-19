@@ -46,5 +46,10 @@ public class EmployeeController {
 	}
 	
 	
+	@RequestMapping(value="/hello",method=RequestMethod.GET,produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<String> getMessage(){
+		return new ResponseEntity<String>("Hello world.!",HttpStatus.OK);
+	}
+	
 
 }
