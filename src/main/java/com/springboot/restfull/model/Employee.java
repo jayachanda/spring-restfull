@@ -10,7 +10,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="employee")
-public class Employee implements Serializable {
+public class Employee implements Serializable,Comparable<Employee> {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
@@ -81,8 +81,12 @@ public class Employee implements Serializable {
 	public void setSalary(Integer salary) {
 		this.salary = salary;
 	}
-	
-	
-	
+
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 	
 }
