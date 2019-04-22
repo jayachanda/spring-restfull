@@ -45,15 +45,24 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+	
 	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
-
+              <plugins>
+                     <plugin>
+                           <groupId>org.springframework.boot</groupId>
+                           <artifactId>spring-boot-maven-plugin</artifactId>
+                           <configuration>
+                                  <classifier>exec</classifier>
+                           </configuration>
+                           <executions>
+                                  <execution>
+                                         <goals>
+                                                <goal>build-info</goal>
+                                         </goals>
+                                  </execution>
+                           </executions>
+                     </plugin>
+                     
+              </plugins>
+       </build>
 </project>
