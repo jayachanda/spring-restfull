@@ -6,7 +6,7 @@
 	<groupId>com.springboot.restfull</groupId>
 	<artifactId>spring-restfull</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 
 	<name>spring-restfull</name>
 	<description>Spring Boot Application</description>
